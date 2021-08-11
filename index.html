@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-nav" id="top-nav">
+        <i class="fas fa-phone-alt"></i> +977 9863452920 &nbsp;&nbsp; |&nbsp;&nbsp; <i class="fas fa-envelope"></i> bhattaraiujjwal26@gmail.com
+    </div>
+    <div class="music-nav" id="music-nav">
+        <div class="circle">
+            <i class="fas fa-circle circle1"></i>
+            <i class="fas fa-circle circle2"></i>
+            <i class="fas fa-circle circle3"></i>
+        </div>
+        <div class="music-nav-text">
+            <i class="fas fa-music"></i>
+            <span>Music player</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-left" id="container-left">
+            <!-- <div class="search-box">
+                <input type="text" class="search" id="search" placeholder="search from the list">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="music-list" id="music-list">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ad ex earum dignissimos dolores doloribus itaque quos minima molestiae enim!
+            </div>-->
+            <div class="image">
+                <img src="b.jpg" alt="image" id="image">
+                <!-- <h1>All songs</h1>-->
+            </div>
+        </div>
+        <div class="container-right" id="container-right">
+            <div class="icons">
+                <div class="shuffle" id="shuffle">
+                    <i class="fas fa-random"> </i>
+                </div>
+                <!--  <div class="serial" id="list-icon">
+                    <i class="fas fa-list"> </i>
+                </div>-->
+            </div>
+            <div class="playing">
+                <div class="current-playing">
+                    <div class="song-name" id="song-name">Song name</div>
+                    <div class="artist" id="artist">Artist name</div>
+
+                </div>
+                <div class="next-playing">
+                    Next: <span id="next-playing">Next song</span>
+                </div>
+
+                <div class="song-controls-bar">
+                    <input type="range" min="0" max="100" value="0" id="song-slider" onchange="changeDuration()">
+                </div>
+                <div class="song-controls">
+                    <button class="prev" id="prev"><i class="fas fa-step-backward"></i></button>
+                    <button class="backward" id="backward"><i class="fas fa-fast-backward"></i></button>
+                    <button class="play-pause" id="play-pause"><i class="fas fa-play"></i> <!--<i class="fas fa-pause"></i>--></button>
+                    <button class="forward" id="forward"><i class="fas fa-fast-forward"></i></button>
+                    <button class="next" id="next"><i class="fas fa-step-forward"></i></button>
+                </div>
+                <div class="volume-controls-box">
+                    <i class="fas fa-volume-up" id="volumeBtn"></i>
+                    <input type="range" min="0" max="100" value="80" id="volume-controls" onchange="volumeChange()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
