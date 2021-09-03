@@ -10,8 +10,9 @@ body {
 }
 
 .top-nav {
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
+    
     border-bottom: 1px solid rgba(106, 106, 106, 0.5);
 }
 
@@ -38,7 +39,7 @@ body {
 }
 
 .music-nav-text {
-    padding: 10px;
+    padding: 10px 3px;
     font-size: 22px;
     color: #b81e13d5;
     font-weight: 600;
@@ -67,7 +68,7 @@ body {
 
 img {
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 .listItems {
@@ -81,7 +82,16 @@ img {
     width: 50%;
     box-shadow: 2px 2px 16px #b3b3b3;
     position: relative;
-    padding: 10px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    /* background-color: #0e6f33; */
 }
 
 .playing {
@@ -141,14 +151,28 @@ button:hover {
 }
 
 @media screen and (max-width: 750px) {
+    .top-nav{
+        font-size: 0.8rem;
+    }
     .container {
-        width: 100%;
+        width: 95%;
+        margin: 8% auto;
         padding: 0;
         flex-direction: column;
     }
-    .container-left,
-    .container-right {
-        width: 90%;
-        padding: 0 5%;
+    .container-left{
+        width: 100%;
+        margin: auto ;
     }
+    .container-right {
+        width: 100%;
+    }
+    img {
+        min-height: 250px;
+    }
+    .song-controls {
+        margin: 10px 0;
+        padding: 0;
+    }
+    
 }
